@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_s",
+  "info": {
+    "name": "Category "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryname": {
+      "type": "string"
+    },
+    "documents": {
+      "collection": "documents",
+      "via": "categories",
+      "dominant": true
+    }
+  }
+}
